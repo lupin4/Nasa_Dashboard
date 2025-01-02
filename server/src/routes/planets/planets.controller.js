@@ -1,12 +1,6 @@
-const planets = require('../../models/planets.model');
+import { planets } from '../../models/planets.model.js';
 
-function getAllPlanets(req, res) {
+export const getAllPlanets = (req, res) => {
     res.status(200).json(planets);
-        
-    
-}
-
-module.exports = {
-    getAllPlanets,
 };
 

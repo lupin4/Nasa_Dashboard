@@ -1,7 +1,6 @@
-
-const express = require("express");
-const cors = require("cors");
-const planetsRouter = require("./routes/planets/planets.router");
+import express from 'express';
+import cors from 'cors';
+import planetsRouter from './routes/planets/planets.router.js';
 
 const app = express();
 
@@ -15,7 +14,6 @@ app.use(express.json());
 
 app.use(planetsRouter);
 
-
-module.exports = app;
+export default app;
 
 
